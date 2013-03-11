@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Animation.cpp" />
+    <ClCompile Include="source\DebugDrawer.cpp" />
+    <ClCompile Include="source\MoveableShape.cpp" />
+    <ClCompile Include="source\Game.cpp" />
+    <ClCompile Include="source\Graphics.cpp" />
+    <ClCompile Include="source\Grid.cpp" />
+    <ClCompile Include="source\InputManager.cpp" />
+    <ClCompile Include="source\IRenderable.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Particles.cpp" />
+    <ClCompile Include="source\PhysicsWorld.cpp" />
+    <ClCompile Include="source\Points.cpp" />
+    <ClCompile Include="source\RigidBody.cpp" />
+    <ClCompile Include="source\StaticShape.cpp" />
+    <ClCompile Include="source\SoundManager.cpp" />
+    <ClCompile Include="source\tdogl\Bitmap.cpp" />
+    <ClCompile Include="source\tdogl\Program.cpp" />
+    <ClCompile Include="source\tdogl\Shader.cpp" />
+    <ClCompile Include="source\tdogl\Texture.cpp" />
+    <ClCompile Include="source\Tile.cpp" />
+    <ClCompile Include="source\DrawableFactory.cpp" />
+    <ClCompile Include="source\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Animation.h" />
+    <ClInclude Include="source\DebugDrawer.h" />
+    <ClInclude Include="source\EventListener.h" />
+    <ClInclude Include="source\Geometry.h" />
+    <ClInclude Include="source\ModelAsset.h" />
+    <ClInclude Include="source\MoveableShape.h" />
+    <ClInclude Include="source\Game.h" />
+    <ClInclude Include="source\Graphics.h" />
+    <ClInclude Include="source\Grid.h" />
+    <ClInclude Include="source\Helpers.h" />
+    <ClInclude Include="source\InputManager.h" />
+    <ClInclude Include="source\IRenderable.h" />
+    <ClInclude Include="source\Particles.h" />
+    <ClInclude Include="source\PhysicsWorld.h" />
+    <ClInclude Include="source\Points.h" />
+    <ClInclude Include="source\RigidBody.h" />
+    <ClInclude Include="source\StaticShape.h" />
+    <ClInclude Include="source\SoundManager.h" />
+    <ClInclude Include="source\tdogl\Bitmap.h" />
+    <ClInclude Include="source\tdogl\Program.h" />
+    <ClInclude Include="source\tdogl\Shader.h" />
+    <ClInclude Include="source\tdogl\Texture.h" />
+    <ClInclude Include="source\Tile.h" />
+    <ClInclude Include="source\DrawableFactory.h" />
+    <ClInclude Include="source\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\fragment-shader.txt" />
+    <None Include="resources\particle-fragment.txt" />
+    <None Include="resources\particle-vertex.txt" />
+    <None Include="resources\standard-frag.txt" />
+    <None Include="resources\standard-vert.txt" />
+    <None Include="resources\vertex-shader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39E0D9AD-3960-4FB6-8BFE-C520DB242ED0}</ProjectGuid>
+    <RootNamespace>My03_matrices</RootNamespace>
+    <ProjectName>Game</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)thirdparty\Box2D;$(ProjectDir)thirdparty\fmod\inc;$(ProjectDir)thirdparty\glew-1.9.0\include;$(ProjectDir)thirdparty\glfw-2.7.7\include;$(ProjectDir)thirdparty\glm-0.9.4.0;$(ProjectDir)thirdparty\stb_image;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)thirdparty\Box2D\libs;$(ProjectDir)thirdparty\fmod\lib;$(ProjectDir)thirdparty\glew-1.9.0\lib;$(ProjectDir)thirdparty\glfw-2.7.7\lib-msvc100;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)thirdparty\Box2D;$(ProjectDir)thirdparty\fmod\inc;$(ProjectDir)thirdparty\glew-1.9.0\include;$(ProjectDir)thirdparty\glfw-2.7.7\include;$(ProjectDir)thirdparty\glm-0.9.4.0;$(ProjectDir)thirdparty\stb_image;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)thirdparty\Box2D\libs;$(ProjectDir)thirdparty\fmod\lib;$(ProjectDir)thirdparty\glew-1.9.0\lib;$(ProjectDir)thirdparty\glfw-2.7.7\lib-msvc100;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>GLFW.lib;glew32s.lib;opengl32.lib;fmod_event.lib;fmod_event_net.lib;fmodex_vc.lib;Box2D_d.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <PostBuildEvent>
+      <Command> copy "$(ProjectDir)resources\*" "$(OutDir)\"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy resources into same directory as executable</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>GLFW.lib;glew32s.lib;opengl32.lib;fmod_event.lib;fmod_event_net.lib;fmodex_vc.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command> copy "$(ProjectDir)resources\*" "$(OutDir)\"</Command>
+      <Message>Copy resources into same directory as executable</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

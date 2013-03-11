@@ -1,0 +1,10 @@
+#version 150
+
+//uniform sampler2D texture0;
+
+in vec4 color;
+
+void main(void) {
+	//Sample the texture
+	gl_FragColor = vec4(1.0,1.0,1.0,1.0);//texture(texture0, gl_PointCoord) * color;
+}

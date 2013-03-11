@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{4399bbbd-8cc5-411d-9dcc-308c93d817d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Graphics">
+      <UniqueIdentifier>{c290c876-5778-4426-aa8f-9436c4f2dfba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Input">
+      <UniqueIdentifier>{c573904c-d4ae-4fbb-ba68-943a32a8dcb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Listener">
+      <UniqueIdentifier>{4b471c9f-2733-4892-8b92-f8c759b6d23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Game">
+      <UniqueIdentifier>{5caf4083-c84f-4cc5-8010-ca162db4bfd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Utils">
+      <UniqueIdentifier>{75469326-a18e-4866-8656-93ea18092039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Graphics\Shader">
+      <UniqueIdentifier>{6255d8cf-8b3c-4ff9-a5c4-4a256f3bbe13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Graphics\Texture">
+      <UniqueIdentifier>{5105d495-da4d-46b5-a955-624c4c7f752e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Graphics\Drawables">
+      <UniqueIdentifier>{ba4abb6d-6ea4-44d7-bf37-5f1e41006ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Sound">
+      <UniqueIdentifier>{29164e8a-daaa-4454-a9e6-c9e0313a6433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Physics">
+      <UniqueIdentifier>{58a839da-bb58-4fbf-9fb0-28b254b80e18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Graphics.cpp">
+      <Filter>source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\InputManager.cpp">
+      <Filter>source\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Animation.cpp">
+      <Filter>source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Grid.cpp">
+      <Filter>source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tdogl\Shader.cpp">
+      <Filter>source\Graphics\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tdogl\Program.cpp">
+      <Filter>source\Graphics\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tdogl\Bitmap.cpp">
+      <Filter>source\Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tdogl\Texture.cpp">
+      <Filter>source\Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="source\IRenderable.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DrawableFactory.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Timer.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MoveableShape.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Tile.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Particles.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoundManager.cpp">
+      <Filter>source\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Points.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game.cpp">
+      <Filter>source\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PhysicsWorld.cpp">
+      <Filter>source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RigidBody.cpp">
+      <Filter>source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StaticShape.cpp">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DebugDrawer.cpp">
+      <Filter>source\Physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Graphics.h">
+      <Filter>source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\InputManager.h">
+      <Filter>source\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EventListener.h">
+      <Filter>source\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Helpers.h">
+      <Filter>source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Animation.h">
+      <Filter>source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Grid.h">
+      <Filter>source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tdogl\Shader.h">
+      <Filter>source\Graphics\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tdogl\Program.h">
+      <Filter>source\Graphics\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tdogl\Bitmap.h">
+      <Filter>source\Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tdogl\Texture.h">
+      <Filter>source\Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="source\IRenderable.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DrawableFactory.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Timer.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MoveableShape.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Tile.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Particles.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Geometry.h">
+      <Filter>source\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SoundManager.h">
+      <Filter>source\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Points.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game.h">
+      <Filter>source\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PhysicsWorld.h">
+      <Filter>source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RigidBody.h">
+      <Filter>source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StaticShape.h">
+      <Filter>source\Graphics\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ModelAsset.h">
+      <Filter>source\Graphics\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="source\DebugDrawer.h">
+      <Filter>source\Physics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\fragment-shader.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\vertex-shader.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\particle-vertex.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\particle-fragment.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\standard-frag.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\standard-vert.txt">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

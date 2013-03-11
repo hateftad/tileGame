@@ -1,0 +1,22 @@
+#version 150
+
+uniform sampler2D tex;
+
+in vec2 fragTexCoord;
+
+out vec4 finalColor;
+
+void main() {
+	//note: the texture function was called texture2D in older versions of GLSL
+
+	vec4 text = texture(tex, fragTexCoord);
+	
+	if(text.a == 0.0)
+	{
+		discard;
+	}
+	
+	finalColor = text;
+	
+	 //finalColor = vec4(1.0, 1.0, 1.0, 1.0);
+}
